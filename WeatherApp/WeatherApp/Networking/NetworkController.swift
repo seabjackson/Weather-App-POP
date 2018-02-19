@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol NetworkController {
-    func fetchCurrentWeatherData(city: String, completionHandler: @escaping (WeatherData?, NetworkControllerError?) -> Void)  -> WeatherData?
+    func fetchCurrentWeatherData(city: String, completionHandler: @escaping (WeatherData?, NetworkControllerError?) -> Void)
 }
 
 public struct WeatherData {
