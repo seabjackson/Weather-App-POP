@@ -1,6 +1,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private lazy var controller = OpenWeatherMapNetworkController()
+    
+    
     @IBOutlet weak var weatherLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +26,46 @@ extension ViewController: UITextFieldDelegate {
                 return true
         }
         
+        controller.fetchCurrentWeatherData(city: cityName) { (weatherData, error) in
+            if let data = weatherData {
+                let displayText = "Weather in \(cityName): \(data.condition), \(data.temperature) \(data.unit.rawValue)"
+                self.weatherLabel.text = displayText
+            } else {
+                self.weatherLabel.text = "There is no weather data at this location! :("
+            }
+        }
+        
         return true
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

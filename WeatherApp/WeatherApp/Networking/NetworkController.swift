@@ -19,9 +19,9 @@ public struct WeatherData {
 }
 
 public enum TemperatureUnit: String {
-    case scientific = "scientific"
-    case metric = "metric"
-    case imperial = "imperial"
+    case scientific = "K"
+    case metric = "C"
+    case imperial = "F"
 }
 
 public enum NetworkControllerError: Error {
@@ -29,3 +29,4 @@ public enum NetworkControllerError: Error {
     case invalidPayLoad(URL)
     case forwarded(Error)
 }
+

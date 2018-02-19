@@ -15,6 +15,7 @@
 		3748027C1F88B8C000CBD4A1 /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3748027B1F88B8C000CBD4A1 /* WeatherAppTests.swift */; };
 		B5686A19203A5210008D82AE /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5686A18203A5210008D82AE /* NetworkController.swift */; };
 		B5CF80A7203A90C500D4335B /* OpenWeatherMapNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF80A6203A90C400D4335B /* OpenWeatherMapNetworkController.swift */; };
+		B5CF80A9203A9B1500D4335B /* OpenWeatherMapDataMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF80A8203A9B1500D4335B /* OpenWeatherMapDataMappings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3748027D1F88B8C000CBD4A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5686A18203A5210008D82AE /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		B5CF80A6203A90C400D4335B /* OpenWeatherMapNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherMapNetworkController.swift; path = WeatherApp/AddOns/OpenWeatherMapNetworkController.swift; sourceTree = SOURCE_ROOT; };
+		B5CF80A8203A9B1500D4335B /* OpenWeatherMapDataMappings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OpenWeatherMapDataMappings.swift; path = WeatherApp/AddOns/OpenWeatherMapDataMappings.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		B5686A17203A51ED008D82AE /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B5CF80A8203A9B1500D4335B /* OpenWeatherMapDataMappings.swift */,
 				B5CF80A6203A90C400D4335B /* OpenWeatherMapNetworkController.swift */,
 				B5686A18203A5210008D82AE /* NetworkController.swift */,
 			);
@@ -215,6 +218,7 @@
 			files = (
 				374802691F88B8C000CBD4A1 /* ViewController.swift in Sources */,
 				374802671F88B8C000CBD4A1 /* AppDelegate.swift in Sources */,
+				B5CF80A9203A9B1500D4335B /* OpenWeatherMapDataMappings.swift in Sources */,
 				B5CF80A7203A90C500D4335B /* OpenWeatherMapNetworkController.swift in Sources */,
 				B5686A19203A5210008D82AE /* NetworkController.swift in Sources */,
 			);
